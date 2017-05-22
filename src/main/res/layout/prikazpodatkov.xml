@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/Slika"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ID avtobusa"
+        android:id="@+id/idAvtobus"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/idAvtobus"
+        android:layout_toLeftOf="@+id/textPrice"/>
+
+    <TextView
+        android:id="@+id/imePostajalisca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Ime postajalisca"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Prihodi"
+        android:id="@+id/prihodi"
+        android:layout_marginLeft="5dp"
+        android:textColor="#666"/>
+
+
+
+
+</LinearLayout>
