@@ -73,15 +73,12 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     // prikaz casov postaj NAPAKA NEMOGOCE POPRAVITI
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        MyHolder myHolder= (MyHolder) holder;
-        MyHolder myHolder1 = (MyHolder) holder;
+        MyHolder myHolder= (MyHolder) holder;        
         Maindata current=GlavniPodatki.get(position);
         Maindata prihodiCas = Arrivals.get(position);
 
-        myHolder1.imePostajalisca.setText(String.valueOf(prihodiCas.seznamPrihodov));
-        myHolder1.imePostajalisca.setTextColor(ContextCompat.getColor(context, R.color.colorAccent));
-
-
+        myHolder.imePostajalisca.setText(String.valueOf(prihodiCas.seznamPrihodov));
+        myHolder.imePostajalisca.setTextColor(ContextCompat.getColor(context, R.color.colorAccent));
         myHolder.idAvtobus.setText(current.nameStation);
 
 
